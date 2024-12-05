@@ -1,0 +1,151 @@
+    /* custom Fonts */
+    @font-face {
+        font-family: 'twainsixevensans';
+        src: url(assets/fonts/twainsixeven.ttf);
+        font-weight: normal;
+      }
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  
+      body {
+        font-family: 'twainsixevensans';
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+
+      footer {
+        font-family: 'twainsixevensans';
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      footer a {
+        text-decoration: none;
+        color: rgb(184, 98, 98);
+      }
+
+      /* Contact Container */
+      .contact-container {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      .contact-item {
+        text-align: center;
+        background-color: #dedede76;
+        padding: 10px 20px;
+        border-radius: 10px;
+      } 
+        /* Grow */
+        .hvr-grow {
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            transition-duration: 0.3s;
+            transition-property: transform;
+        }
+
+        .hvr-grow:hover,
+        .hvr-grow:focus,
+        .hvr-grow:active {
+            transform: scale(1.05);
+        }
+      /* Navigation Bar */
+      .navbar {
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #cbcbcbd5;
+        padding: 10px 25px;
+        color: white;
+        background: transparent;
+        backdrop-filter: blur(10px);
+      }
+  
+      .navbar img {
+        height: 40px;
+      }
+  
+      .navbar-links {
+        list-style: none;
+        display: flex;
+      }
+  
+      .navbar-links li {
+        margin-left: 20px;
+      }
+  
+      .navbar-links a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+  
+      .navbar-links a:hover {
+        text-decoration: none;
+      }
+  
+      /* Main Content */
+      .content {
+        padding: 30px;
+      }
+      .paraslon {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .paraslon a {
+        text-decoration: none;
+        color: rgb(184, 98, 98);
+      }
+
+      .subtitle {
+        color: rgb(129, 129, 129);
+      }
+  
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .navbar-links li {
+          margin-left: 10px;
+        }
+  
+        /* Replace text links with emojis */
+        .navbar-links a {
+          font-size: 1.5rem;
+          color: white;
+        }
+  
+        .navbar-links a#home::after {
+          content: '🏠'; /* Home Icon */
+        }
+  
+        .navbar-links a#about::after {
+          content: '📄'; /* Document Icon */
+        }
+  
+        .navbar-links a#downloads::after {
+          content: '📁'; /* Folder Icon */
+        }
+  
+        /* Hide the text and show only the icons */
+        .navbar-links a span {
+          display: none;
+        }
+  
+        .navbar-links {
+          justify-content: center;
+        }
+      }
