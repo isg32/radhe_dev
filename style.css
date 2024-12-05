@@ -133,11 +133,11 @@
         }
   
         .navbar-links a#about::after {
-          content: '📄'; /* Document Icon */
+          content: '💁🏻'; /* Document Icon */
         }
   
         .navbar-links a#downloads::after {
-          content: '📁'; /* Folder Icon */
+          content: '⬇️'; /* Folder Icon */
         }
   
         /* Hide the text and show only the icons */
